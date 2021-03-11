@@ -1,28 +1,62 @@
 body{
+  font-size: 130%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #eb4d4b;
+  background: white;
+  background-image: url(../login-system/5a358a18864e338d3bbdb9c918fc0c94-removebg-preview.png) ;
+  background-repeat: no-repeat;
 }
 .title{
+  color: #2B3252;
   margin-top: 3rem;
   text-align: center;
   font-family: 'Akaya Telivigala', cursive;
-  font-size: 300%;
+  font-size: 400%;
+  margin-left: 14rem;
+  
 }
+#sign-up{
+ 
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: 2B3252;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  margin-top:20% ;
+  /* background-color:#FAD744 ; */
+}
+#sign-up:hover{
+  background: #2ecc71;
+}
+
 .box{
-  width: 300px;
-  padding: 40px;
+  width: 400px;
+  padding: 70px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  background: #191919;
+ 
+  transform: translate(-1000%,-50%); 
+  background: #EF5455;
   text-align: center;
   border-radius: 30px;
+  
+}
+#box{
+  transition: 1s;
+  transform: translate(-30%,-20%);
 }
 .box h1{
-  color: white;
+  font-family: 'Redressed', cursive;
+  color: #2B3252;
   text-transform: uppercase;
   font-weight: 500;
 
@@ -35,15 +69,15 @@ body{
   text-align: center;
   border: 2px solid #3498db;
   padding: 14px 10px;
-  width: 200px;
+  width: 250px;
   outline: none;
   color: white;
   border-radius: 24px;
   transition: 0.25s;
 }
 .box input[type = "text"]:focus,.box input[type = "password"]:focus{
-  width: 280px;
-  border-color: #2ecc71;
+  width: 350px;
+  border-color: #FAD744;
 }
 .box input[type = "submit"]{
   border:0;
@@ -52,9 +86,9 @@ body{
   margin: 20px auto;
   text-align: center;
   border: 2px solid #2ecc71;
-  padding: 14px 40px;
+  padding: 17px 70px;
   outline: none;
-  color: white;
+  color:white;
   border-radius: 24px;
   transition: 0.25s;
   cursor: pointer;
@@ -62,3 +96,7 @@ body{
 .box input[type = "submit"]:hover{
   background: #2ecc71;
 }
+.box input[type = "text"]::placeholder,.box input[type = "password"]::placeholder{
+  color: white;
+}
+
