@@ -1,0 +1,64 @@
+
+.donate{
+    height: 100vh;
+    background:rgba(0,0,0,0.5);
+    /* position: absolute; */
+    top: 0;
+    left: 0; 
+}
+
+.donate #donate-form{
+    position: absolute;
+    top: 10rem;
+    right: 5rem;
+    background-color: #f2f2f2;
+    width: 30rem;
+ display: flex;
+ flex-direction: column;
+ margin: 0 auto;
+ border-radius: 50px;
+}
+.donate #donate-form input,.donate #donate-form textarea{
+    width: 27rem;
+    border-radius: 7rem;
+    border: none;
+    margin: 0.5rem auto ;
+    padding: 1.4rem 1rem;
+    resize: none;
+    outline: none;
+    transition: 0.25s;
+
+}
+.donate #donate-form input:focus,.donate #donate-form textarea:focus{
+    width: 29rem;
+    outline-color: #9d8ae4;
+}
+.donate #donate-form textarea{
+    height: 5rem;
+}
+
+.donate #donate-form button{
+    background-color: #827ffe;
+    width: 7rem;
+    padding: 0.9rem;
+    border-radius: 30px;
+    /* box-shadow: none  !important; */
+    border: none;
+    color: white;
+    margin: 0.5rem auto;
+    transition: 0.25s;
+}
+.donate #donate-form h1{
+    color: #403866;
+    margin-left: 3rem;
+}
+.donate #donate-form button:hover{
+    width: 8rem;
+}
+.donate #donate-form  input[type = "text"]::placeholder,.donate #donate-form textarea::placeholder, .donate #donate-form  input[type = "password"]::placeholder{
+ color: #bdbed7;
+ font-family: 'Anton', sans-serif;
+ font-size: 150%;
+ padding-left: 1rem;
+ font-weight: bold;
+}
