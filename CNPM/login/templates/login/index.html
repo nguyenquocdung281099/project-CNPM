@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <title>َAnimated Login Form</title>
+    <link rel="stylesheet" href="{% static 'login/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<h1 class="title">Blood Bank Management System</h1>
+<form class="box" action="" method="POST">
+  {% csrf_token %}
+  <h1>Login</h1>
+  <input type="text" name="username" placeholder="username">
+  <input type="password" name="password" placeholder="password">
+  <input type="submit" name="" value="Login">
+</form>
+
+
+  </body>
+</html>

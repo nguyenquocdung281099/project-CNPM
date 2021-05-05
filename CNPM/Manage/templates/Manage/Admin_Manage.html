@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blank Blood system</title>
+    <link rel="stylesheet" href="{% static 'Manage/css/home.css' %}">
+ 
+<!-- <script src="../jsBlankSystem/slideshow.js"></script> -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+<script  type="text/javascript" href="{% static 'libraryForm.js' %}"> </script>
+    <script href="{% static 'home.js' %}" type="text/javascript"></script> 
+
+</head>
+<body>
+    <div class="container">
+        <!-- ///////////// -->
+            
+
+
+        <div class="div1" id="home">
+        
+            <!-- <div class="image">
+                <img src="../img/banner-bg.png" alt="">
+            </div> -->
+            
+            <div class="nav_bar">
+                <div class="logo">
+                    <a href="/" class="logo_link">
+                        <img src="{% static 'Manage/img/logo.png' %}" alt="logo" ></a>
+                    </div>
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="/" class="nav_link">Home</a>
+                    </li>
+                        <li class="nav_item">
+                            <a href="#about-us" class="nav_link">About us</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="/manage" class="nav_link">Admin</a>
+                        </li>
+                    <li class="nav_item">
+                        <a href="/donate/" class="nav_link" id="link-donate" onclick="handleButtonDonateLink()" >Donate</a></li>
+                        <script type="text/javascript">
+                        
+                                function handleButtonDonateLink(){
+                                        var className = "donate";
+                                        document.getElementById(className).setAttribute("class",className);
+                                    }
+                               
+                            </script>
+                        <li class="nav_item">
+                        <a href="#bank-sysytem" class="nav_link">Blood remain</a></li>
+                    <!-- <li class="nav_item">
+                        <a href="#" class="nav_link">Search</a></li> -->
+                    <li class="nav_item">
+                        <a href="#contactUs" class="nav_link">Contact us</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="div2" id ="table_record">
+            {% if obj_records %}
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <th scope="col">STT</th>
+                    <th scope="col">FirstName</th>
+                    <th scope="col">LastName</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Country</th>
+                    <th scope="col">TypeBlood</th>
+                </thead>
+                {% for obj in obj_records  %}
+               
+                  <tr>
+                      <td>{{obj.index}}</td>
+                      <td>{{obj.FirstName}}</td>
+                      <td>{{obj.LastName}}</td>
+                      <td>{{obj.Date}}</td>
+                      <td>{{obj.Email}}</td>
+                      <td>{{obj.Phone}}</td>
+                      <td>{{obj.Country}}</td>
+                      <td>{{obj.TypeBlood}}</td>
+                  </tr>
+            
+                {% endfor %}
+            </table>
+             {% else %}
+             <p>No everyone donate blood!</p> 
+            {% endif %}
+        </div>
+        </div>  
+</body>
+</html>
