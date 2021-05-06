@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="../style/home.css">
     <link rel="stylesheet" href="../style/slideshow.css">
 <!-- <script src="../jsBlankSystem/slideshow.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-<script src="../jsBlankSystem/libraryForm.js"></script>
+<!-- <script src="../jsBlankSystem/libraryForm.js"></script> -->
 <script src="../jsBlankSystem/home.js"></script>
 </head>
 <body>
@@ -26,26 +27,44 @@
                 <img src="../img/banner-bg.png" alt="">
             </div> -->
             
-            <div class="nav_bar">
-                <div class="logo">
-                    <a href="#home" class="logo_link">
-                        <img src="../img/logo.png" alt="logo" ></a></div>
-                <ul class="nav_list">
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">Home</a></li>
-                        <li class="nav_item">
-                            <a href="#about-us" class="nav_link">About us</a></li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link" id="link-donate">Donate</a></li>
-                    <li class="nav_item">
-                        <a href="#bank-sysytem" class="nav_link">Blood remain</a></li>
-                    <!-- <li class="nav_item">
-                        <a href="#" class="nav_link">Search</a></li> -->
-                    <li class="nav_item">
-                        <a href="#contactUs" class="nav_link">Contact us</a></li>
-                    
-                </ul>
+            
+                <div class="nav_bar">
+                    <div class="logo">
+                        <a href="#home" class="logo_link">
+                            <img src="../img/logo.png" alt="logo" ></a></div>
+                            <i class="fas fa-bars "></i>
+                            <p class="close">X</p>
+                        
+                        <ul class="nav_list destop">
+                                <li class="nav_item">
+                                    <a href="" class="nav_link">Home</a></li>
+                                <li class="nav_item">
+                                    <a href="#about-us" class="nav_link">About us</a></li>
+                                <li class="nav_item">
+                                    <a href="" class="nav_link" id="link-donate">Donate</a></li>
+                                <li class="nav_item">
+                                    <a href="#bank-sysytem" class="nav_link">Blood remain</a></li>
+                                <li class="nav_item">
+                                    <a href="#contactUs" class="nav_link">Contact us</a></li>
+                            </ul>
+                        
+                        
+                        <ul class="nav_list mobile">
+                            <li class="nav_item">
+                                <a href="" class="nav_link">Home</a></li>
+                            <li class="nav_item">
+                                <a href="#about-us" class="nav_link">About us</a></li>
+                            <li class="nav_item">
+                                <a href="" class="nav_link" id="link-donate">Donate</a></li>
+                            <li class="nav_item">
+                                <a href="#bank-sysytem" class="nav_link">Blood remain</a></li>
+                            <li class="nav_item">
+                                <a href="#contactUs" class="nav_link">Contact us</a></li>
+                        </ul>
+                        
+                
             </div>
+            
             <div class="div1-main">
                 <h1>Blood Bank System</h1>
                 <h3 class="slogan">
@@ -227,7 +246,7 @@
         </footer>
         
             
-        <div class="donate close" id="donate">
+        <div class="donate " id="donate">
             <form id="donate-form" action="">
                 <button class="close-time" id="time-close" >
                     <i class="fas fa-times"></i>

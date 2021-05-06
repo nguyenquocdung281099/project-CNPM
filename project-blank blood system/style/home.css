@@ -39,7 +39,7 @@ a{
     color: rgb(20, 20, 20);
 }
 .nav_bar{
-
+    display: block;
     background-color: white;
     
     width: 70%;
@@ -184,7 +184,7 @@ a{
        border-radius: 5rem;
        border: 3px solid white;
        width: 30rem;
-       margin-left: 10rem;
+       margin-left: 10%;
    }
    .contactUs #contact-form{
        width: 30rem;
@@ -292,7 +292,7 @@ footer p{
 .bank .bank-item {
     padding-top: 3rem;
     width: 15%;
-    height: 10rem;
+    height: auto;
     border-radius: 3rem;
     background-color: white;
     display: flex;
@@ -398,4 +398,125 @@ footer p{
 }
 .open{
     display: block;
+}
+.fa-bars{
+    display: none !important
+}
+.close{
+   
+    color: white;
+    z-index: 1000;
+    font-weight: 800;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+.click-color{
+    color: white;
+    z-index: 100;
+}
+.destop{
+    display: block;
+}
+.mobile{
+    display: none ;
+}
+
+/* ////////////////// */
+@media only screen and ( max-width: 1024px){
+    .div2 .div2-item{
+        width: 30%;
+    }
+    .div3-discuss, .div3-purpose{
+        width: 90%;
+    }
+    .bank .bank-item {
+        width: 22%;
+    }
+    .contactUs iframe{
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and ( max-width: 768px){
+    .destop{
+        display: none;
+    }
+    .fa-bars{
+        display: block !important;
+        position: absolute;
+        right: 1rem;
+        top: 2rem;
+    }
+    .nav_bar .nav_list{
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        right: -1.5%;
+        bottom: 0;
+        justify-content: start;
+        background-color: black;
+        top: -10%;
+        display: none;
+        height: 100vh;
+    }
+    .nav_list a{
+        color: white;
+    }
+    .mobile .nav_item{
+        margin: 0.5rem;
+    }
+
+    .div3-discuss,.div3-purpose{
+        flex-direction: column;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+        padding-bottom: 1rem;
+    }
+    .div3-discuss img,.div3-purpose img{
+        order: 1;
+    }
+    .contactUs{
+        flex-direction: column;
+    }
+    .contactUs #contact-form{
+        width: 90%;
+    }
+    .contactUs iframe{
+        width: 90%;
+        margin: 1rem auto;
+        order: 2;
+    }
+    #laptop{
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .nav_bar-{
+        width: 90%;
+        display: flex;
+        position: relative;
+    }
+    .nav_bar- .logo img{
+        text-align: center;
+    }
+    
+}
+@media only screen and ( max-width: 400px){
+    .div2{
+        flex-direction: column;
+      
+    }
+    .div2 .div2-item{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .bank{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .bank .bank-item{
+        width: 30%;
+    }
 }
