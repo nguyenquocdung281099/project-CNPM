@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("#donate").hide();
     $(".close").hide();
     $(".mobile").hide();
-    $("#link-donate").click(function (e) { 
+    $(".link-donate").click(function (e) { 
         e.preventDefault();
         $("#donate").show();
     });
@@ -19,7 +19,6 @@ $(document).ready(function () {
     $(".close").click(function (e) { 
         e.preventDefault();
         $(".mobile").slideUp();
-    
         $(".fa-bars").show();
         $(".close").hide();
     });

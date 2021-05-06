@@ -341,7 +341,7 @@ footer p{
 .donate #donate-form{
     position: absolute;
     top: 10rem;
-    right: 5rem;
+    right: 5%;
     background-color: #f2f2f2;
     width: 35rem;
  display: flex;
@@ -440,6 +440,11 @@ footer p{
 }
 
 @media only screen and ( max-width: 768px){
+    .donate #donate-form{
+       width: 100%;
+       right: 0;
+        
+    }
     .destop{
         display: none;
     }
